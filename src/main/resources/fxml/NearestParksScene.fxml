@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #6699cc;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.NearestParksUIController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="93.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/park_connection_symbol.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="59.0" layoutY="68.0" text="Nearest Parks" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="226.0" text="Longitude:" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="158.0" prefHeight="44.0" prefWidth="111.0" text="Latitude:" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCheckNearestParks" layoutX="9.0" layoutY="515.0" mnemonicParsing="false" onAction="#btnCheckNearParks" prefHeight="44.0" prefWidth="317.0" style="-fx-background-color: #1b6CD7; -fx-background-radius: 5em; -fx-border-color: #ffffff; -fx-border-radius: 5em; -fx-text-fill: #ffffff;" text="Check Nearest 5 Parks" />
+      <TextField fx:id="txtLatitude" layoutX="104.0" layoutY="166.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #000000;" />
+      <TextField fx:id="txtLongitude" layoutX="104.0" layoutY="226.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #000000;" />
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBtnBack" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #1b6CD7; -fx-background-radius: 5em; -fx-border-color: #ffffff; -fx-border-radius: 5em; -fx-text-fill: #ffffff;" text="Back" />
+   </children>
+</Pane>

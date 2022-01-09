@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" snapToPixel="false" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.SignInPageUIController">
+   <center>
+      <Pane prefHeight="404.0" prefWidth="605.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView disable="true" fitHeight="623.0" fitWidth="365.0" layoutX="-16.0" layoutY="-13.0" opacity="0.8" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/background.jpg" />
+               </image></ImageView>
+            <Separator layoutX="52.0" layoutY="143.0" prefHeight="0.0" prefWidth="232.0" />
+            <TextField fx:id="usernameField" layoutX="72.0" layoutY="157.0" prefHeight="25.0" prefWidth="191.0" promptText="Username">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <PasswordField fx:id="passwordField" layoutX="72.0" layoutY="187.0" prefHeight="25.0" prefWidth="191.0" promptText="Password">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </PasswordField>
+            <Button fx:id="signInButton" defaultButton="true" layoutX="174.0" layoutY="229.0" mnemonicParsing="false" onAction="#handleSignInButtonAction" prefHeight="25.0" prefWidth="89.0" text="Sign In" />
+            <Hyperlink layoutX="177.0" layoutY="254.0" onAction="#handleCreateAccountHyperLinkAction" text="Create Account">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="76.0" layoutY="107.0" text="Let's get started!">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

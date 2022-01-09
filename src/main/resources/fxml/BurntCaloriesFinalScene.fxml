@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #6699cc;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.BurntCaloriesFinalUIController">
+   <children>
+      <Label layoutX="51.0" layoutY="55.0" text="Burnt Calories" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="343.0" text="Starting Park :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="388.0" text="Finishing Park : " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="438.0" text="Chosen Bicycle :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCalories" layoutX="62.0" layoutY="516.0" mnemonicParsing="false" onAction="#handleBtnCalories" prefHeight="39.0" prefWidth="211.0" style="-fx-background-color: #1b6CD7; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #ffffff; -fx-text-fill: #ffffff;" text="Calculate Calories" />
+      <TextField fx:id="txtStartPark" editable="false" layoutX="148.0" layoutY="342.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #000000;" />
+      <TextField fx:id="txtChosenBicycle" editable="false" layoutX="148.0" layoutY="437.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #000000;" />
+      <TextField fx:id="txtFinishingPark" editable="false" layoutX="148.0" layoutY="389.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #000000;" />
+      <Label layoutX="20.0" layoutY="263.0" text="Average Speed :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAverageSpeed" layoutX="149.0" layoutY="263.0" style="-fx-background-radius: 5em; -fx-border-color: #000000; -fx-border-radius: 5em;" />
+      <Line endX="234.0" layoutX="100.0" layoutY="319.0" startX="-100.0" stroke="WHITE" />
+      <ImageView fitHeight="89.0" fitWidth="70.0" layoutX="132.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/flame_symbol.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBtnBack" prefHeight="29.0" prefWidth="56.0" style="-fx-background-color: #1b6CD7; -fx-border-radius: 5em; -fx-background-radius: 5em; -fx-border-color: #ffffff; -fx-text-fill: #ffffff;" text="Back" />
+   </children>
+</Pane>

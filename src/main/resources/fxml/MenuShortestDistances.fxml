@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #6699cc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.MenuShortestDistancesUIController">
+   <children>
+      <Line endX="234.0" layoutX="100.0" layoutY="50.0" startX="-100.0" stroke="WHITE" style="-fx-fill: #ffffff;" />
+      <Button fx:id="btnRoute" layoutX="16.0" layoutY="443.0" mnemonicParsing="false" onAction="#handleBtnRoute" prefHeight="35.0" prefWidth="307.0" style="-fx-background-color: #1b6CD7; -fx-border-color: #ffffff; -fx-background-radius: 5em; -fx-text-fill: #ffffff; -fx-border-radius: 5em;" text="Routes" />
+      <Button fx:id="btnDistance" layoutX="16.0" layoutY="490.0" mnemonicParsing="false" onAction="#handleBtnDistance" prefHeight="35.0" prefWidth="307.0" style="-fx-background-color: #1b6CD7; -fx-border-color: #ffffff; -fx-border-radius: 5em; -fx-text-fill: #ffffff; -fx-background-radius: 5em;" text="Distances" />
+      <Label layoutX="6.0" layoutY="14.0" prefHeight="25.0" prefWidth="84.0" style="-fx-text-fill: #ffffff; -fx-font-size: 16;" text="Your bike:" />
+      <TextField fx:id="txtBikeUsing" editable="false" layoutX="84.0" layoutY="13.0" onAction="#handleTxtBikeUsing" style="-fx-background-color: #ffffff; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #000000;" />
+      <ImageView fitHeight="166.0" fitWidth="179.0" layoutX="86.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/map_symbol.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnCalories" layoutX="16.0" layoutY="536.0" mnemonicParsing="false" onAction="#handleBtnCalories" prefHeight="35.0" prefWidth="307.0" style="-fx-background-color: #1b6CD7; -fx-text-fill: #ffffff; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #ffffff;" text="Calories Burnt" />
+      <Button fx:id="btnLogOut" layoutX="252.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleBtnLogOut" prefHeight="27.0" prefWidth="68.0" style="-fx-background-color: #1b6CD7; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #ffffff; -fx-text-fill: #ffffff;" text="Back" />
+   </children>
+</Pane>

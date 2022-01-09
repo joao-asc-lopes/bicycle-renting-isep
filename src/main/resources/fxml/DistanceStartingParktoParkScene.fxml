@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #6699cc;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.DistanceStartingParkToParkUIController">
+   <children>
+      <Label layoutX="67.0" layoutY="42.0" text="Starting Park" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnChooseOtherPark" layoutX="14.0" layoutY="530.0" mnemonicParsing="false" onAction="#handleBtnChooseOtherPark" prefHeight="39.0" prefWidth="309.0" style="-fx-background-color: #1b6CD7; -fx-background-radius: 5em; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-radius: 5em;" text="Choose the finishing Park" />
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBtnBack" prefHeight="28.0" prefWidth="61.0" style="-fx-background-color: #1b6CD7; -fx-background-radius: 5em; -fx-border-color: #ffffff; -fx-border-radius: 5em; -fx-text-fill: #ffffff;" text="Back" />
+      <ListView fx:id="lstStartingPark" layoutX="40.0" layoutY="123.0" prefHeight="329.0" prefWidth="256.0" />
+   </children>
+</Pane>

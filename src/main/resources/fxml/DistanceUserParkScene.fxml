@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #6699cc;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.DistanceUserParkUIController">
+   <children>
+      <Button fx:id="btnChoosePark" layoutX="13.0" layoutY="526.0" mnemonicParsing="false" onAction="#handleBtnChoosePark" prefHeight="39.0" prefWidth="310.0" style="-fx-background-color: #1b6CD7; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-text-fill: #ffffff; -fx-border-color: #ffffff;" text="Choose Park" />
+      <Label layoutX="31.0" layoutY="41.0" text="User Coordinates" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="172.0" text="Latitude:" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="252.0" text="Longitude:" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLatitude" layoutX="100.0" layoutY="171.0" style="-fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #000000;" />
+      <TextField fx:id="txtLongitude" layoutX="100.0" layoutY="251.0" style="-fx-border-color: #000000; -fx-background-radius: 5em; -fx-border-radius: 5em;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="89.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/park_connection_symbol.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBack" layoutX="13.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBtnBack" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: #1b6CD7; -fx-background-radius: 5em; -fx-border-color: #ffffff; -fx-border-radius: 5em; -fx-text-fill: #ffffff;" text="Back" />
+   </children>
+</Pane>

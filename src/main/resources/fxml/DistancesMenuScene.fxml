@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #6699cc;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lapr.project.ui.DistanceMenuUIController">
+   <children>
+      <Label layoutX="99.0" layoutY="492.0" style="-fx-text-fill: #ffffff;" text="Nearest 5 Parks from User" />
+      <Label layoutX="211.0" layoutY="337.0" style="-fx-text-fill: #ffffff;" text="User to Park" />
+      <Label layoutX="50.0" layoutY="337.0" style="-fx-text-fill: #ffffff;" text=" Park to Park" />
+      <Label layoutX="93.0" layoutY="69.0" style="-fx-text-fill: #ffffff;" text="Distances">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="552.0" mnemonicParsing="false" onAction="#handleBtnBack" prefHeight="34.0" prefWidth="67.0" style="-fx-background-color: #1b6CD7; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #ffffff; -fx-text-fill: #ffffff;" text="Back " />
+      <Button fx:id="btnNearestFiveParks" layoutX="106.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleNearest5Parks" prefHeight="102.0" prefWidth="102.0" style="-fx-background-color: #1b6CD7; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #ffffff;">
+         <graphic>
+            <ImageView fitHeight="114.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/multiple_tree_symbol.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnUserParkDistance" layoutX="192.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleBtnUIserParkDistance" prefHeight="102.0" prefWidth="102.0" style="-fx-background-color: #1b6CD7; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #ffffff;">
+         <graphic>
+            <ImageView fitHeight="77.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/user_symbol.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnParkParkDistance" layoutX="32.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleBtnPrkParkDistance" prefHeight="102.0" prefWidth="102.0" style="-fx-background-color: #1b6CD7; -fx-background-radius: 5em; -fx-border-radius: 5em; -fx-border-color: #ffffff;">
+         <graphic>
+            <ImageView fitHeight="77.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/park_symbol.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>
